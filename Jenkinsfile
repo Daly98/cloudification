@@ -1,7 +1,7 @@
 node {
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub user') {
+    docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
 
         def customImage = docker.build("dali98/mohamedali")
 
